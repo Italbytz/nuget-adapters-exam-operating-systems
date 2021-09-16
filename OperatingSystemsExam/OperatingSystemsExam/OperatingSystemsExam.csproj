@@ -10,4 +10,18 @@
     <Description>A set of assignments and solvers for operating systems exams.</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="PageReplacement\" />
+    <None Remove="PageReplacement\Adapters\" />
+    <None Remove="ExamPorts" />
+    <None Remove="RandomExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PageReplacement\" />
+    <Folder Include="PageReplacement\Adapters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ExamPorts" Version="0.4.0" />
+    <PackageReference Include="RandomExtensions" Version="0.1.0" />
+  </ItemGroup>
 </Project>
