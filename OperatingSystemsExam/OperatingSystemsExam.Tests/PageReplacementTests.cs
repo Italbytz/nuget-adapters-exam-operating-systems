@@ -4,7 +4,7 @@ using OperatingSystemsExam.PageReplacement;
 
 namespace OperatingSystemsExam.Tests
 {
-    public class Tests
+    public class PageReplacementTests
     {
         private readonly int[] ReferenceRequests =
 {

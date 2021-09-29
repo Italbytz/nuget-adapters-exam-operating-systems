@@ -3,22 +3,30 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>0.2.0</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
     <PackageLicenseUrl>https://github.com/Italbytz/operating-systems-exam-nuget/blob/main/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Italbytz/operating-systems-exam-nuget</PackageProjectUrl>
     <Description>A set of assignments and solvers for operating systems exams.</Description>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="PageReplacement\" />
     <None Remove="PageReplacement\Adapters\" />
     <None Remove="ExamPorts" />
     <None Remove="RandomExtensions" />
+    <None Remove="Buddy\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PageReplacement\" />
     <Folder Include="PageReplacement\Adapters\" />
+    <Folder Include="Buddy\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ExamPorts" Version="0.4.0" />
