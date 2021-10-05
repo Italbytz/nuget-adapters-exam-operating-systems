@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.3.0</PackageVersion>
+    <PackageVersion>0.3.1</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
     <PackageLicenseUrl>https://github.com/Italbytz/operating-systems-exam-nuget/blob/main/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Italbytz/operating-systems-exam-nuget</PackageProjectUrl>
@@ -25,6 +25,7 @@
     <None Remove="Quiz\" />
     <None Remove="TriviaPorts" />
     <None Remove="Scheduling\" />
+    <None Remove="Scheduling\Realtime\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PageReplacement\" />
@@ -32,6 +33,7 @@
     <Folder Include="Buddy\" />
     <Folder Include="Quiz\" />
     <Folder Include="Scheduling\" />
+    <Folder Include="Scheduling\Realtime\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ExamPorts" Version="0.4.0" />
