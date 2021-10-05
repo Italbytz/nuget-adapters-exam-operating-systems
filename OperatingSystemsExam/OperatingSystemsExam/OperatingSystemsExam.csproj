@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.3.1</PackageVersion>
+    <PackageVersion>0.4.0</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
     <PackageLicenseUrl>https://github.com/Italbytz/operating-systems-exam-nuget/blob/main/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Italbytz/operating-systems-exam-nuget</PackageProjectUrl>
