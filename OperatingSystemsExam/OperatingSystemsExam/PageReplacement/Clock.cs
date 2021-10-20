@@ -37,6 +37,6 @@ namespace OperatingSystemsExam.PageReplacement
             base.ToString() + $"\nPointer: {_pointer}";
 
         protected override string GetAdditionalSimulationInfo() =>
-            _pointer.ToString();
+            (_pointer + 1).ToString();
     }
 }
