@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.4.1</PackageVersion>
+    <Authors>Robin Nunkesser</Authors>
+    <PackageLicenseUrl>https://github.com/Italbytz/nuget-adapters-exam-operating-systems/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Italbytz/nuget-adapters-exam-operating-systems</PackageProjectUrl>
+    <Description>A set of helpful adapters for exams to use with Ports and Adapters.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Italbytz.Ports.Exam.OperatingSystems" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Italbytz.Extensions.Random" />
+    <None Remove="Italbytz.Ports.Trivia" />
+    <None Remove="Infrastructure\PageReplacement\" />
+    <None Remove="Infrastructure\Buddy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Italbytz.Ports.Exam.OperatingSystems" Version="0.0.1" />
+    <PackageReference Include="Italbytz.Extensions.Random" Version="0.1.1" />
+    <PackageReference Include="Italbytz.Ports.Trivia" Version="0.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure\PageReplacement\" />
+    <Folder Include="Infrastructure\Buddy\" />
+  </ItemGroup>
+</Project>
