@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Italbytz.Adapters.Exam.OperatingSystems.Scheduling;
 using NUnit.Framework;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems.Tests
@@ -32,9 +31,9 @@ namespace Italbytz.Adapters.Exam.OperatingSystems.Tests
         }
 
         [Test]
-        public void TestFIFO()
+        public void TestFCFS()
         {
-            var solver = new FIFOSolver();
+            var solver = new FCFSSolver();
             var solution = solver.Solve(parameters);
             Assert.AreEqual(12.6, solution.Time);
         }

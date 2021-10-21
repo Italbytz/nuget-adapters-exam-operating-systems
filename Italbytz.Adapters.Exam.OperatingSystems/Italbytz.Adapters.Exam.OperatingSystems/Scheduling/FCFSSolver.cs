@@ -1,11 +1,11 @@
 ﻿using System;
 using Italbytz.Ports.Exam;
 
-namespace Italbytz.Adapters.Exam.OperatingSystems.Scheduling
+namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class FIFOSolver : ISolver<SchedulingParameters, SchedulingSolution>
+    public class FCFSSolver : ISolver<SchedulingParameters, SchedulingSolution>
     {
-        public FIFOSolver()
+        public FCFSSolver()
         {
         }
 

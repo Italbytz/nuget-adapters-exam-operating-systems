@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.4.1</PackageVersion>
+    <PackageVersion>0.4.2</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
     <PackageLicenseUrl>https://github.com/Italbytz/nuget-adapters-exam-operating-systems/blob/main/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Italbytz/nuget-adapters-exam-operating-systems</PackageProjectUrl>
@@ -18,20 +18,26 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Italbytz.Ports.Exam.OperatingSystems" />
-    <None Remove="Infrastructure\" />
     <None Remove="Italbytz.Extensions.Random" />
     <None Remove="Italbytz.Ports.Trivia" />
-    <None Remove="Infrastructure\PageReplacement\" />
-    <None Remove="Infrastructure\Buddy\" />
+    <None Remove="Italbytz.Infrastructure.Exam.OperatingSystems" />
+    <None Remove="Buddy\" />
+    <None Remove="PageReplacement\" />
+    <None Remove="RealtimeScheduling\" />
+    <None Remove="Scheduling\" />
+    <None Remove="Quiz\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Italbytz.Ports.Exam.OperatingSystems" Version="0.0.1" />
     <PackageReference Include="Italbytz.Extensions.Random" Version="0.1.1" />
     <PackageReference Include="Italbytz.Ports.Trivia" Version="0.1.2" />
+    <PackageReference Include="Italbytz.Infrastructure.Exam.OperatingSystems" Version="0.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Infrastructure\" />
-    <Folder Include="Infrastructure\PageReplacement\" />
-    <Folder Include="Infrastructure\Buddy\" />
+    <Folder Include="Buddy\" />
+    <Folder Include="PageReplacement\" />
+    <Folder Include="RealtimeScheduling\" />
+    <Folder Include="Scheduling\" />
+    <Folder Include="Quiz\" />
   </ItemGroup>
 </Project>

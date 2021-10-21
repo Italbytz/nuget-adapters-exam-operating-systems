@@ -2,11 +2,11 @@
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class RTSchedulingParameters
+    public class RealtimeSchedulingParameters
     {
         public (int,int)[] Requests { get; set; }
 
-        public RTSchedulingParameters() 
+        public RealtimeSchedulingParameters() 
         {
             var rnd = new Random();
             (int, int)[] configuration;

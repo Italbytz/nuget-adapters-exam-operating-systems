@@ -5,13 +5,13 @@ using Italbytz.Ports.Exam;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class RMSSolver : ISolver<RTSchedulingParameters, RTSchedulingSolution>
+    public class RMSSolver : ISolver<RealtimeSchedulingParameters, RealtimeSchedulingSolution>
     {
         public RMSSolver()
         {
         }
 
-        public RTSchedulingSolution Solve(RTSchedulingParameters parameters)
+        public RealtimeSchedulingSolution Solve(RealtimeSchedulingParameters parameters)
         {
             var result = new int[32];
             var waiting = new List<(int, int)>();
@@ -38,7 +38,7 @@ namespace Italbytz.Adapters.Exam.OperatingSystems
                 }
 
             }
-            return new RTSchedulingSolution()
+            return new RealtimeSchedulingSolution()
             {
                 Processes = result
             };

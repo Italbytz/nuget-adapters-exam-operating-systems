@@ -1,6 +1,6 @@
 ﻿namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class RTSchedulingSolution
+    public class RealtimeSchedulingSolution
     {
         public int[] Processes { get; internal set; }
     }

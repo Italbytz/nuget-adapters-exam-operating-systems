@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Italbytz.Infrastructure.Exam.OperatingSystems;
+using Italbytz.Infrastructure.Exam.OperatingSystems.Buddy;
 using Italbytz.Ports.Exam;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
