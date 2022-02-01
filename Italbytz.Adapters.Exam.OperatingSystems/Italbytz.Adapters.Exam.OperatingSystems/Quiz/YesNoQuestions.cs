@@ -13,6 +13,21 @@ namespace Italbytz.Adapters.Exam.OperatingSystems
             },
             new YesNoQuestion()
             {
+                Text = @"Beim Paging haben alle Seiten die gleiche Länge.",
+                Answer = true
+            },
+            new YesNoQuestion()
+            {
+                Text = @"Ein Nachteil kurzer Seiten beim Paging ist, dass die Seitentabelle sehr groß werden kann.",
+                Answer = true
+            },
+            new YesNoQuestion()
+            {
+                Text = @"Die MMU übersetzt beim Paging logische Speicheradressen mit der Seitentabelle in physische Adressen.",
+                Answer = true
+            },
+            new YesNoQuestion()
+            {
                 Text = @"Journaling-Dateisysteme grenzen die bei der Konsistenzprüfung zu überprüfenden Daten ein.",
                 Answer = true
             },
