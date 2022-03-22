@@ -1,9 +1,10 @@
 ﻿using System;
 using Italbytz.Extensions;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class SchedulingParameters
+    public class SchedulingParameters : ISchedulingParameters
     {
         public int[] Values { get; set; }
         public string[] Priorities { get; set; }

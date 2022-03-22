@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using Italbytz.Infrastructure.Exam.OperatingSystems.Buddy;
 using Italbytz.Ports.Exam;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class BuddySolver : ISolver<BuddyParameters,BuddySolution>
+    public class BuddySolver : IBuddySolver
     {
         public BuddySolver()
         {
         }
 
-        public BuddySolution Solve(BuddyParameters parameters)
+        public IBuddySolution Solve(IBuddyParameters parameters)
         {
             var operations = new List<Process>();
 

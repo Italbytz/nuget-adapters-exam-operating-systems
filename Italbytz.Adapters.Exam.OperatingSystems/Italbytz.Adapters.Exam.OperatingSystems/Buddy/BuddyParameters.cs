@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Linq;
 using Italbytz.Extensions;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class BuddyParameters
+    public class BuddyParameters : IBuddyParameters
     {
         private Random _random = new();
 

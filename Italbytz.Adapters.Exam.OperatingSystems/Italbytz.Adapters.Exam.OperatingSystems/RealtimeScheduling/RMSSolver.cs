@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using Italbytz.Ports.Exam;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class RMSSolver : ISolver<RealtimeSchedulingParameters, RealtimeSchedulingSolution>
+    public class RMSSolver : IRealtimeSchedulingSolver
     {
         public RMSSolver()
         {
         }
 
-        public RealtimeSchedulingSolution Solve(RealtimeSchedulingParameters parameters)
+        public IRealtimeSchedulingSolution Solve(IRealtimeSchedulingParameters parameters)
         {
             var result = new int[32];
             var waiting = new List<(int, int)>();

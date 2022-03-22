@@ -1,7 +1,9 @@
-﻿namespace Italbytz.Adapters.Exam.OperatingSystems
+﻿using Italbytz.Ports.Exam.OperatingSystems;
+
+namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class SchedulingSolution
+    public class SchedulingSolution : ISchedulingSolution
     {
-        public double Time { get; internal set; }
+        public double Time { get; set; }
     }
 }

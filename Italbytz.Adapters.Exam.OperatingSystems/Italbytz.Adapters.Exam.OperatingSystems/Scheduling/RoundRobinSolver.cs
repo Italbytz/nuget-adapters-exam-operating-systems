@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Linq;
 using Italbytz.Ports.Exam;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class RoundRobinSolver : ISolver<SchedulingParameters, SchedulingSolution>
+    public class RoundRobinSolver : ISchedulingSolver
     {
         public RoundRobinSolver()
         {
         }
 
-        public SchedulingSolution Solve(SchedulingParameters parameters)
+        public ISchedulingSolution Solve(ISchedulingParameters parameters)
         {
             var orderedValues = parameters.Values.OrderBy(s => s);
             var result = 0.0;

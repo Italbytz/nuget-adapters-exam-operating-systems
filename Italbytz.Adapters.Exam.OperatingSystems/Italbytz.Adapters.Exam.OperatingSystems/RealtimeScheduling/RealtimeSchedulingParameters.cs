@@ -1,8 +1,9 @@
 ﻿using System;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class RealtimeSchedulingParameters
+    public class RealtimeSchedulingParameters : IRealtimeSchedulingParameters
     {
         public (int,int)[] Requests { get; set; }
 

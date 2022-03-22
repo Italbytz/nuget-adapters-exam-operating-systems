@@ -1,15 +1,16 @@
 ﻿using System;
 using Italbytz.Ports.Exam;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class FCFSSolver : ISolver<SchedulingParameters, SchedulingSolution>
+    public class FCFSSolver : ISchedulingSolver
     {
         public FCFSSolver()
         {
         }
 
-        public SchedulingSolution Solve(SchedulingParameters parameters)
+        public ISchedulingSolution Solve(ISchedulingParameters parameters)
         {
             var result = 0.0;
             var processes = parameters.Values.Length;
