@@ -1,15 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using Italbytz.Adapters.Exam.OperatingSystems.PageReplacement;
 using Italbytz.Infrastructure.Exam.OperatingSystems.PageReplacement;
 using Italbytz.Ports.Exam;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class OptimalSolver : ISolver<PageReplacementParameters, List<SimulationResult>>
+    public class OptimalSolver : IPageReplacementSolver
     {
-        public List<SimulationResult> Solve(PageReplacementParameters parameters)
+        public IPageReplacementSolution Solve(IPageReplacementParameters parameters)
         {
-            return new Optimal(parameters.ReferenceRequests, parameters.MemorySize).Simulate();
+            var simResult = new Optimal(parameters.ReferenceRequests, parameters.MemorySize).Simulate();
+            var steps = simResult.Select(sim => sim.ToStep()).ToList();
+            return new PageReplacementSolution()
+            {
+                Steps = steps
+            };
+
         }
     }
 }

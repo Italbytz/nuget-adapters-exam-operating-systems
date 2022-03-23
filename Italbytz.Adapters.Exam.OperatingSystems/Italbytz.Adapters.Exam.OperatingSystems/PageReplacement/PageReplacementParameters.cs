@@ -1,9 +1,10 @@
 ﻿using System;
 using Italbytz.Extensions;
+using Italbytz.Ports.Exam.OperatingSystems;
 
 namespace Italbytz.Adapters.Exam.OperatingSystems
 {
-    public class PageReplacementParameters
+    public class PageReplacementParameters : IPageReplacementParameters
     {
         public int[] ReferenceRequests { get; set; }
         public int MemorySize { get; set; }
