@@ -23,11 +23,6 @@ namespace Italbytz.Adapters.Exam.OperatingSystems
             },
             new YesNoQuestion()
             {
-                Text = @"Die MMU übersetzt beim Paging logische Speicheradressen mit der Seitentabelle in physische Adressen.",
-                Answer = true
-            },
-            new YesNoQuestion()
-            {
                 Text = @"Journaling-Dateisysteme grenzen die bei der Konsistenzprüfung zu überprüfenden Daten ein.",
                 Answer = true
             },
