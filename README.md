@@ -4,11 +4,11 @@
 
 ## See Also
 
-This package has been superseded by [`nuget-exam`](https://github.com/RobinNunkesser/work/tree/main/artifacts/packages/dotnet/nuget-exam).
+This package has been superseded by [`nuget-exam`](https://github.com/italbytz/nuget-exam).
 
 ## See Also
 
-This package has been superseded by **[`nuget-foundation`](https://github.com/RobinNunkesser/work/tree/main/artifacts/packages/dotnet/nuget-foundation)**.
+This package has been superseded by **[`nuget-foundation`](https://github.com/italbytz/nuget-foundation)**.
 
 
 
